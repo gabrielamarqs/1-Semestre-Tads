@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img id="galeria" src="https://i.scdn.co/image/ab6761610000e5eb66701ca609176d8fd4a9c4a0"/>
+
+    <script>
+
+        //gatilho == click
+        //n precisa ter 3 tags no html ==> só precisa de 1 tag
+        //associar o id de img cm galeria 
+ 
+
+        function changeImg(){
+            var change = document.querySelector("#galeria");
+            var counter = 0;
+
+            function nextPic() {
+                alert();
+                x++;
+
+                // Check if on last element of array, change x to first
+                if(x >= galeria.length) {
+                    x = 0;
+                }
+
+                // Use variable, declared as number, to access img in array
+                document.getElementById("galeria").src = galeria[x];
+
+                }
+        }
+        change.addEventListener("onclick", nextPic);
+        counter -= 1; 
+        nextPic();
+
+    </script>
+
+</body>
+</html>

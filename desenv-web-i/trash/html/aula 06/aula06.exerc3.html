@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+    <style>
+        body {
+            background-image: url(https://raw.githubusercontent.com/fscheidt/web1-22/master/aulas/images/space.png);
+        }
+        
+        .container {
+            border: 1px solid lightcyan;
+            border-radius: 1%;
+            background-color: rgba(105, 216, 201, 0.199);
+            opacity: 80%;
+            color: aquamarine;
+            padding: 10px 20px 10px 20px;
+            margin-left: 20%;
+            margin-top: 10%;
+            width: 60%;
+        }
+        .formulario{
+            column-gap: 15px;
+            row-gap: 15px;
+            padding: 30px;
+        }
+        .forms{
+            display: grid;
+            grid-template-columns: 20% 1fr;
+            column-gap: 15px;
+            row-gap: 15px;
+            text-align: right;
+        }
+        h2 {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .bottom {
+            text-align: justify;
+        }
+        .bottom input{
+            width: 18%;
+        }
+        button {
+            width: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <main class="container">
+        <h2>Cadastro usuário</h2>
+
+        <form class="formulario">
+            <div class="forms">
+                <label>Nome</label>
+                <input name="nome" type="text" placeholder="Felix Moraes Silveira">
+    
+                <label>Email</label>
+                <input name="email" type="email" placeholder="fms@test.org">
+    
+                <label>Nascimento</label>
+                <input name="data" type="date" >
+    
+                <label>País</label>
+                <select name="pais">
+                    <option>Selecione</option>
+                    <option>Brasil</option>
+                    <option>Colombia</option>
+                    <option>Argentina</option>
+                    <option>Chile</option>
+                    <option>Venezuela</option>
+                    <option>Paraguai</option>
+                    <option>Equador</option>
+                </select> 
+                <label>Idade</label>
+
+            <div class="bottom">
+                    <input name="idade" type="number" size="5">
+                    <label>DDD</label>
+                    <input name="ddd" type="number" placeholder="22" size="3">
+                    <label>Telefone</label>
+                    <input name="fone" type="number">
+            </div>
+            <p><button>Adicionar</button></p>
+
+        </form>
+    </main>
+    
+</body>
+</html>

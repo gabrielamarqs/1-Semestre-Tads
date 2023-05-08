@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my site 1</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .container {
+            background-color: white;
+            display: grid;
+            grid-template-areas: 
+            "header header"
+            "menub feed"
+            ". feed"
+            "bottom bottom";
+            grid-template-columns: 200px 1fr;
+        }
+        .menua a {
+            text-align: center;
+        }
+        .header {
+            grid-area: header;
+            background-color: rgb(173, 132, 56);
+            text-align: center;
+            padding: 20px;
+        }
+        .header h1 {
+            color: blue;
+            display: inline;
+        }
+        .header a {
+            color: yellow;
+            text-decoration: none;
+        }
+        .menub {
+            grid-area: menub;
+            background-color: rgb(173, 132, 56);
+        }
+        .menub ul {
+            list-style-type: none;
+            text-align: left;
+            padding: 0 15px 15px 15px;
+        }
+        .menub li {
+            background-color: white;
+            border: 5px solid rgb(173, 132, 56);
+            padding: 10px;
+        }
+        .menub a {
+            color: navy;
+            text-decoration: none;
+        }
+        .menub li:hover {
+            background-color: lightgreen;
+        }
+        .feed {
+            grid-area: feed;
+            padding: 0px 20px 30px 20px;
+            
+        }
+        .hline {
+            width: 100%;
+            height: 2px;
+            background: blue;
+        }
+        .conteudo h3 {
+            color: blue;
+        }
+        .bottom {
+            grid-area: bottom;
+            background-color: lightgray;
+        }
+        h5 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Desenvolvimento de sistemas</h1>
+            <div class="menua">
+                <a href="#">google </a>|
+                <a href="#">ifpr </a>|
+                <a href="#">uol</a>
+            </div>
+        </div>
+        <div class="menub">
+            <ul>
+                <li><a href="#">produtos</a></li>
+                <li><a href="#">clientes</a></li>
+                <li><a href="#">help-desk</a></li>
+                <li><a href="#">informações</a></li>
+            </ul>
+        </div>
+        <div class="feed">
+            <h3>Introdução<div class="hline"></div></h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe non consectetur quos veniam quasi sunt inventore ipsa exercitationem, explicabo repudiandae, quaerat vero, at voluptatum veritatis. Repudiandae doloribus nobis sint eligendi?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eligendi ea aperiam, unde sit, exercitationem, nulla suscipit id dignissimos praesentium fugit consectetur laboriosam distinctio sint illum voluptates animi atque possimus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum quos eos molestiae odit quod quis debitis recusandae ullam! Necessitatibus quod ex repellendus officia minima.
+            <h3>Desenvolvimento<div class="hline"></div></h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis enim dolorum, incidunt corporis consectetur dicta fuga corrupti pariatur laudantium aliquid.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium porro commodi eaque saepe! Quaerat pariatur maiores molestias veritatis, ad commodi reiciendis laboriosam eos necessitatibus, porro dolor neque sint ex fugit sunt ullam in quas! Numquam quidem excepturi nostrum libero qui illum alias animi, vel nesciunt itaque molestias aliquam, rem necessitatibus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam saepe beatae porro, architecto magnam doloribus, aperiam incidunt similique ab alias nemo, ducimus sapiente. Perferendis possimus hic dolores optio culpa est doloribus ipsa quidem excepturi nobis, vel quae rem, ex aliquid. Autem ullam debitis optio ea ad, vitae, a ipsam deleniti fugit commodi non. Cum rem porro ipsa? Iusto, laboriosam aspernatur praesentium harum laudantium earum quaerat sit animi error perferendis doloremque nam consequatur nostrum natus omnis est fuga delectus architecto! Debitis laudantium magnam vel officia hic tempora sequi explicabo eveniet. Autem omnis consectetur veritatis sapiente tenetur sequi. Voluptatibus dolores id sapiente.
+        </div>
+        <div class="bottom">
+            <h5>Site desenvolvido por tectronica S.A</h5>
+        </div>
+    </div>
+    
+</body>
+</html>

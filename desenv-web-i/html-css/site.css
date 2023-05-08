@@ -1,0 +1,53 @@
+div {
+    border: 1px solid red;
+}
+.container{
+    border: 1px solid rosybrown;
+} 
+
+.menu{
+    float: left;
+    width: 20%;
+    margin-right: 5px;
+    padding: 6px;
+}
+.menu a{
+    /* quebra a linha - tipo um "br"*/
+    display: block;
+}
+.conteudo{
+    float: left;
+    width: 70%;
+
+    /*1- Define cada uma das margens internas:*/
+    /*padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-top: 40px;*/
+
+    /*2- Define uma margem para todos:*/
+    padding: 10px; /*topo, fundo, direita, esquerda*/
+
+    /*3- Define cada margem numa linha:*/
+    padding: 40px 30px 50px 20px; 
+    /*sentido horário top-> right -> bottom -> left*/
+}
+.conteudo span{
+    background-color: lightcoral;
+    display: inline;
+    /*display: block;*/ /*considera a ultima colocada*/
+}
+/*.titulo span{
+    background-color: lightgreen;
+}*/ /*essa é só para o titulo*/
+
+.italico {
+    font-style: italic;
+}
+.destaque {
+    background-color: lightskyblue;
+}
+.destaque:hover{  /* hover - recurso do css q associa quando
+    o mouse passa por cima do elemento */
+    display: none; /* esconde */
+}

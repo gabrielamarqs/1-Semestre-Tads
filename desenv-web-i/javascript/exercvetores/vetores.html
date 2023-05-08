@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Vetores no JS
+        - O que são vetores == array
+        - Como declarar um vetor
+        - Como interar/percorrer o vetor
+
+        Vetores são listas, usados p/ agrupar valores.
+
+        Exemplo, armazenar as compras do supermercado:
+        Leite, tomate, farinha.
+
+        //possível forma de armazenar os valores, usando string:
+        let compras = "leite, tomate, farinha"; (only 1 item)
+
+        //pode representar melhor usando vetor:
+        let compras = ["leite", "tomate", "farinha"]; (da p/ diferenciar os itens)
+
+        //vetor é um objeto que possui propriedades e métodos, exemplo:
+        
+            //lenght: retorna o tamanho do vetor (quantidade de itens)
+            compras.lenght
+    -->
+    <script>
+        let compras = ["leite", "tomate", "farinha"];
+        console.log(`Tamanho do vetor: ${compras.length}`);
+
+        console.log(`Primeiro item: ${compras[0]}`);
+        console.log(`Segundo item: ${compras[1]}`);
+        console.log(`Terceiro item: ${compras[2]}`);
+
+        //sort - ordena os itens do vetor
+        console.log(compras.sort());
+
+        let valores = [7, 20, 30];
+
+        let total = valores[0] + valores[1] + valores[2]; //total --> variável INT
+
+        console.log(`Valor total: ${total}`);
+
+        valores1 = [10, 2, 30, 4, 5, 6, 70];
+        console.log(valores1.length); //7
+
+        // calcular o total de uma quantidade de itens desconhecida...
+        console.log("===Percorrendo o vetor===");
+        let novoTotal = 0;
+        for(let i=0; i < valores1.length; i++)
+        {
+            //valores1 = [10, 2, 30, 4, 5, 6, 70];
+            //i é uma variável, que inicia em 0 e deve ser incrementada de 1 em 1
+            console.log(valores1[i]); 
+            console.log(`posição: ${i} - valor: ${i}`);
+            novoTotal = valores1[i] + novoTotal;
+        }
+            console.log(`Valor total = ${novoTotal}`);
+            console.log(`Média = ${novoTotal/valores1.length}`);
+
+    </script>
+</body>
+</html>

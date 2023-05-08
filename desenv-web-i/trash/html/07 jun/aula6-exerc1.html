@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my site 1</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .container {
+            background-color: white;
+            display: grid;
+            grid-template-areas: 
+            "header"
+            "menu"
+            "conteudo"
+            "bottom";
+        }
+        .header {
+            grid-area: header;
+            background-color: rgb(173, 132, 56);
+        }
+        .header h1 {
+            color: blue;
+        }
+        .menu {
+            grid-area: menu;
+            background-color: navy; 
+            text-align: center;
+            padding: 5px;
+        }
+        .menu a {
+            color: white;
+        }
+        .menu a:hover {
+            color: yellow;
+        }
+        .conteudo {
+            grid-area: conteudo;
+            padding: 0px 20px 30px 20px;
+            
+        }
+        .hline {
+            width: 100%;
+            height: 2px;
+            background: blue;
+        }
+        .conteudo h3 {
+            color: blue;
+        }
+        .bottom {
+            grid-area: bottom;
+            background-color: lightgray;
+        }
+        h1, h5 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Desenvolvimento de sistemas</h1>
+        </div>
+        <div class="menu">
+            <a href="#">google |</a>
+            <a href="#">ifpr |</a>
+            <a href="#">uol</a>
+        </div>
+        <div class="conteudo">
+            <h3>Introdução<div class="hline"></div></h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe non consectetur quos veniam quasi sunt inventore ipsa exercitationem, explicabo repudiandae, quaerat vero, at voluptatum veritatis. Repudiandae doloribus nobis sint eligendi?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eligendi ea aperiam, unde sit, exercitationem, nulla suscipit id dignissimos praesentium fugit consectetur laboriosam distinctio sint illum voluptates animi atque possimus!
+            <h3>Desenvolvimento<div class="hline"></div></h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis enim dolorum, incidunt corporis consectetur dicta fuga corrupti pariatur laudantium aliquid.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium porro commodi eaque saepe! Quaerat pariatur maiores molestias veritatis, ad commodi reiciendis laboriosam eos necessitatibus, porro dolor neque sint ex fugit sunt ullam in quas! Numquam quidem excepturi nostrum libero qui illum alias animi, vel nesciunt itaque molestias aliquam, rem necessitatibus!
+        </div>
+        <div class="bottom">
+            <h5>Site desenvolvido por tectronica S.A</h5>
+        </div>
+    </div>
+    
+</body>
+</html>

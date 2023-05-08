@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+ 
+</head>
+<body>
+
+    <img id="imgCat" src="https://marvel-b1-cdn.bc0a.com/f00000000052994/www.hillspet.com/content/dam/cp-sites/hills/hills-pet/en_us/exported/cat-care/new-pet-parent/images/mother-cat-and-kitten-sleeping.jpg" width="300px">
+    <script>
+        document.getElementById("imgCat").onmouseover = function() {imgMaior()};
+        document.getElementById("imgCat").onmouseout = function() {imgMenor()};
+
+        function imgMaior() {
+        document.getElementById("imgCat").style.width="400px"; 
+        }
+
+        function imgMenor() {
+        document.getElementById("imgCat").style.width="400px";       
+        }
+    </script>
+</body>
+</html>

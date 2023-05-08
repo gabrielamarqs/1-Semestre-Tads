@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+
+    <style>
+        .container {
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <form class="formulario">
+
+            <label>Nome:</label>
+            <input name="nome" type="text">    
+
+            <label>RG:</label>
+            <input name="rg" type="text">    
+
+            <label>CPF:</label>
+            <input name="cpf" type="text">    
+            
+            <label>Nome da mãe:</label>
+            <input name="nomem" type="text">        
+
+            <label>Nome do pai:</label>
+            <input name="nomep" type="text">   
+    
+            <label>Escolaridade:</label>
+            <select name="escola">
+                <option>Ensino Fundamental</option>
+                <option>Ensino Médio</option>
+                <option>Ensino Superior</option>
+            </select>    
+
+            <label>Curso</label>
+            <textarea cols="20" rows="4" name="curso">Ensino Fundamental Ensino Médio Superior Completo Pós Graduação
+            </textarea>
+
+            <form>
+                Gostaria de solicitar bolsa de estudos:
+                <input type="checkbox" name="pref" value="ic">Iniciação científica<br>
+                <input type="checkbox" name="pref" value="monit">Monitoria<br>
+                <input type="checkbox" name="pref" value="est">Estágio<br>
+            </form>
+
+
+            <label>Email:</label>
+            <input name="email" type="text">@ifpr.edu.br    
+
+            <label for="senha">senha</label>
+            <input type="pass" type="password">
+
+            <label for="turno"></label>
+            <form>
+                Escolha o turno do curso:
+                <input type="radio" name="pref" value="diu">Diurno<br>
+                <input type="radio" name="pref" value="vesp">Vespertino<br>
+                <input type="radio" name="pref" value="not">Noturno<br>
+            </form>
+
+            <button>Enviar</button>
+
+
+
+
+
+
+
+        </form>
+    </div>
+    </div>
+    
+</body>
+</html>

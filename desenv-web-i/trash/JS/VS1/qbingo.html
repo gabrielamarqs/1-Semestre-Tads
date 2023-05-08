@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Exerc 3</title>
+</head>
+<body>
+    <main>
+        <h2>Quiz de matemática:</h2>
+        <div>
+            <h3>SOMA</h3>
+            <div><button id="inic">iniciar</button></div>
+            <span id="num1">x</span>
+            +
+            <span id="num2">y</span>
+        </div>
+        <div>
+            <label>Resultado
+                <input type="text" name="resultado" id="ans">
+            </label>
+            <p><span id="resp">?</span></p>
+        </div>
+        <script>
+
+            var iniConta = document.querySelector("#inic");
+
+            iniConta.addEventListener("click", function(){
+                let numX = document.querySelector("#num1");
+                numX.textContent = parseInt ((Math.random()*10)+1);
+                let numY = document.querySelector("#num2");
+                numY.textContent = parseInt ((Math.random()*10)+1);
+                var soma = document.querySelector("#ans");
+                    soma.addEventListener("keypress", function(e){
+                        if (e.key === 'Enter'){
+                    let acerto = document.querySelector("#resp");
+                    let resp = numX.value + numY.value;
+                    if ((numX.value + numY.value) == resp.value){
+                        acerto.textContent =`errou`;
+                    } else {
+                        acerto.textContent =`acertou`;
+                    }
+                 }});
+            
+            });
+
+
+
+
+
+
+
+        </script>
+    </main>
+</body>
+</html>

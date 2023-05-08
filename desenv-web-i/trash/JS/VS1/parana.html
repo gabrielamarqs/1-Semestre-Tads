@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Exercício 1</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Verificação.</h2>
+    <!--Script que verifica o nome do estado onde a usuário reside. Se igual a Paraná,
+        exibir informação "Agendamento liberado", caso contrário exibir "Não autorizado". -->
+            <div>
+                <label id="est">Estado:
+                    <select name="estado" id="estado">
+                        <option name="am" value="value1">Amazonas.</option>
+                        <option name="ap" value="value2">Amapá.</option>
+                        <option name="rj" value="value3">Rio de Janeiro.</option>
+                        <option name="sp" value="value4">São Paulo.</option>
+                        <option name="rn" value="value5">Rio Grande do Norte.</option>
+                        <option name="rs" value="value6">Rio Grande do Sul.</option>
+                        <option name="sc" value="value7">Santa Catarina.</option>
+                        <option name="pr" value="value8">Paraná.</option>
+                        <option name="go" value="value9">Goiás.</option>
+                        <option name="rr" value="value10">Roraima.</option>
+                        <option name="ms" value="value11">Mato Grosso do Sul.</option>
+                        <option name="mg" value="value12">Minas Gerais.</option>
+                    </select>
+                </label>
+                <button id="trig">Enviar</button>
+                <div><span id="ver"></span></div>
+            </div>
+        <script>
+
+            var trigger = document.querySelector("#trig");
+
+            trigger.addEventListener("click", function(){
+                var x = document.getElementById("estado");
+                let verif = document.querySelector("#ver");
+                if (x.value === 'value8') {
+                    verif.textContent = `Agendamento Liberado.`;}
+                else {
+                    verif.textContent = `Não autorizado.`;}
+            });
+        </script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conceitos</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            width: 30%;
+            padding: 10px;
+        }
+        h1, h3 {
+            text-align: center;
+        }
+        .conc {
+            font-weight: bold;
+        }
+        .notas {
+            display: grid;
+            row-gap: 5px;
+            padding: 10px;
+        }
+        input {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Conceito</h1>
+        <h3>Equivalência entre Conceito e Nota:</h3>
+        <span class="conc">A = 9.0 A 10
+            <br> B = 7.5 a 8.9
+            <br>C = 6.0 a 7.4
+            <br>D =   0 a 5.9
+        </span>
+
+        <div class="notas">
+            <label for="Nota 1">Nota 1: <input type="text" name="notA" id="notA"></label>
+            <label for="Nota 2">Nota 2: <input type="text" name="notB" id="notB"></label>
+            <label for="Nota 3">Nota 3: <input type="text" name="notC" id="notC"></label>
+        </div>
+            <button id="calcular" >Calcular:</button>
+            <span id="total"></span>
+            <br><span id="conceito" class="conceito"></span>
+        <script>
+        
+        let calcular = document.querySelector("#calcular");
+
+        calcular.addEventListener("click", function(){
+            calcularConceito();})
+
+            function calcularConceito() {
+                let nota1 = document.querySelector("#notA");
+                let nota2 = document.querySelector("#notB");
+                let nota3 = document.querySelector("#notC");
+                let spanTotal = document.querySelector("#total");
+                let total  = (nota1.value * 1 + nota2.value * 1 + nota3.value * 1)/3;
+                spanTotal.textContent =` ${total.toFixed(2)}`;
+                let conceito = document.querySelector("#conceito");
+
+                if (total>=9)
+                    {conceito.textContent =`conceito A`;}
+                else if (total>=7.5 && total<9)
+                    {conceito.textContent =`conceito B`;}
+                else if (total>=6 && total<7.5)
+                    {conceito.textContent =`conceito C`;}
+                else
+                    {conceito.textContent =`conceito D`;}
+        }
+        </script>
+
+    </div>
+</body>
+</html>

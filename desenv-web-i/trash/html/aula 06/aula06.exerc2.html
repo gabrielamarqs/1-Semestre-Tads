@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <style>
+        .formulario {
+            display: grid;
+            width: 30%;
+            border: 1px solid gray;
+            padding: 20px;
+            row-gap: 10px;
+            background-color: rgb(228, 227, 227);
+            margin-left: 67% ;
+        }
+        label {
+            font-weight: bold;
+        }
+        .nome input {
+            width: 48%;
+        }
+        .data select{
+            width: 50%;
+        }
+        .data input {
+            width: 20%;
+        }
+    </style>
+
+</head>
+<body>
+    <main class="container">
+        <form class="formulario">
+            <label>Nome</label>
+            <div class="nome">
+                <input name="nome" type="text" placeholder="Nome">
+                <input name="nome" type="text" placeholder="Sobrenome">    
+            </div>
+
+            <label>Escolher um nome de usuário</label>
+            <input name="usuario" type="text">
+
+            <label>Criar uma senha</label>
+            <input name="senha" type="password">
+
+            <label>Confirme sua senha</label>
+            <input name="senha" type="password">
+            
+
+            <label>Data de nascimento</label>
+            <div class="data">
+                <input name="data" type="text" placeholder="Dia"> 
+                <select name="data">
+                    <option>Mês</option>
+                    <option>Janeiro</option>
+                    <option>Fevereiro</option>
+                    <option>Março</option>
+                    <option>Abril</option>
+                    <option>Maio</option>
+                    <option>Junho</option>
+                    <option>Julho</option>
+                    <option>Agosto</option>
+                    <option>Setembro</option>
+                    <option>Outubro</option>
+                    <option>Novembro</option>
+                    <option>Dezembro</option>
+                </select>
+                <input name="data" type="text" placeholder="Ano"> 
+            </div>
+
+            <label>Sexo</label>
+                <select>
+                    <option>Sou do sexo...</option>
+                    <option>Feminino</option>
+                    <option>Masculino</option>
+                    <option>Prefiro não informar</option>
+                </select>
+
+            <label>Celular</label>
+                <input name="numero" type="text">
+
+
+        </form>
+    </main>
+    
+</body>
+</html>

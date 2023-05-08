@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my site 3</title>
+    <style>
+        div.container {
+            display: grid;
+            grid-template-areas: 
+            "header header"
+            "menu feed"
+            "footer footer";
+            grid-template-columns: 15% 85%;
+            border-left: 1px solid lightgray;
+        }
+        .header {
+            grid-area: header;
+            border: 1px solid lightgray;
+            background-image: url(https://33622.cdn.simplo7.net/static/33622/sku/tecidos-tricoline-tecido-tricoline-verde-tiffany-poa-medio-branco--p-1613477811973.gif);
+            background-size: cover;
+        }
+        .menu {
+            grid-area: menu;
+            margin: 15px;
+            padding: 0px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+        .menu p {
+            display: block;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .footer {
+            grid-area: footer;
+            border: 1px solid lightcoral;
+        }
+        .feed {
+            grid-area: feed;
+            display: grid;
+            grid-template-areas: 
+            "cont cont cont"
+            "img ot st";
+            grid-template-columns: 1fr 1fr 1fr;
+            border: 2px solid green;
+        }
+        .feed div {
+            border: 1px solid lightgray;
+            padding: 10px;
+        }
+        .cont {
+            grid-area: cont;
+        }
+        .img {
+            grid-area: img;
+        }
+        .img img {
+            width: 90%;
+        }
+        .ot {
+            grid-area: ot;
+        }
+        .st {
+            grid-area: st;
+        }
+        h1, h2 {
+            text-transform: uppercase;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h4 {
+            margin: 5px;
+        }
+        .feed p {
+            margin: 10px;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>header_2</h1>
+        </div>
+        <div class="menu">
+            <p><a href="#">opção A</a></p>
+            <p><a href="#">opção B</a></p>
+            <p><a href="#">opção C</a></p>
+            <p><a href="#">opção D</a></p>
+        </div>
+        <div class="feed">
+            <div class="cont">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente esse officia maiores sint repudiandae asperiores voluptatum necessitatibus similique totam facilis quam illum animi illo temporibus, in est rerum. Tempora, nam?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum soluta nobis illo accusamus omnis beatae voluptatibus, vel, autem iste commodi deleniti, dolor aliquid dolorem officiis reiciendis aliquam atque officia?</p>
+            </div>
+            <div class="img">
+                <h4>jungle</h4>
+                <p>                <img src="https://img.freepik.com/vetores-gratis/plano-de-fundo-detalhado-da-selva_23-2148953379.jpg?w=2000">
+                </p>
+            </div>
+            <div class="ot">
+                <h4>one title</h4>
+                <p>                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, labore rem modi autem magnam aspernatur libero numquam illum illo perspiciatis vitae aperiam expedita id quas recusandae? Illo sint sunt repudiandae?
+                </p>
+            </div>
+            <div class="st">
+                <h4>second title</h4>
+                <p>                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum earum iste quasi beatae incidunt blanditiis molestias culpa maiores quo laudantium, accusamus dolorem ut esse, quam mollitia alias ratione, eaque sapiente?
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>footer</h2>
+        </div>
+    </div>    
+</body>
+</html>

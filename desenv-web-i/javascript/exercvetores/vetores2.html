@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img id="galeria" src="https://i.scdn.co/image/ab6761610000e5eb66701ca609176d8fd4a9c4a0"/>
+
+    <script>
+
+        //gatilho == click
+        //n precisa ter 3 tags no html ==> só precisa de 1 tag
+        //associar o id de img cm galeria 
+ 
+
+        function changeImg(){
+            var change = document.getElementById("galeria");
+            var counter = 0;
+            var galeria = [
+            "https://i.scdn.co/image/ab6761610000e5eb66701ca609176d8fd4a9c4a0",
+            "https://conteudo.imguol.com.br/blogs/280/files/2019/04/NCT.jpg",
+            "https://i.scdn.co/image/ab6761610000e5eb2c8ac3b2d8d886fbf3f0877a",
+            "https://www.atrevida.com.br/wp-content/uploads/2021/11/nct-dream-divulga-imagens-de-conceito-para-universe-novo-projeto-coletivo-do-grupo.png",
+            "https://s2.glbimg.com/PFt09s8YgRSzqDV4iWmMHVGLh6M=/e.glbimg.com/og/ed/f/original/2021/05/04/nct_2020-2.jpg"
+        ];
+
+            function nextPic() {
+                counter += 1;
+                if (counter > galeria.length -1) {
+                    counter = 0;
+                }
+                change.style.backgroundImage = "url(" + galeria[counter] + ")";
+                }
+        }
+        change.addEventListener("click", nextPic);
+        counter -= 1; 
+        nextPic();
+
+    </script>
+
+</body>
+</html>

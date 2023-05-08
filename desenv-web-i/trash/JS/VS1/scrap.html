@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      div {
+          /*display: grid;
+          grid-template-columns: 1fr, 1fr, 1fr, 1fr;*/
+      }
+      .produtos {
+          border: 1px solid black;
+          padding: 2px;
+          width: 15%;
+      }
+      .fim {
+          background-color: lightgreen;
+          /*border: 1px solid black;*/
+      }
+  </style>
+</head>
+    <body>
+    <h1>ORÇAMENTO</h1>
+        <div>
+            <!--entre aspas -> função -->
+            <div>
+                <label class="produtos">Leite</label>
+                <label>Valor:
+                    <!--title - acessibilidade-->
+                    <input type="text" id="valor1" title="valor total">
+                </label>
+                <label>Quantidade:
+                    <input type="text" id="quant1" value="1"> 
+                </label>                        
+                <span id="total">= R$ 0.00</span>
+            </div>
+            <div>
+                <label class="produtos">Arroz</label>
+                <label>Valor:
+                    <input type="text" id="valor2">
+                </label>
+                <label>Quantidade:
+                    <input type="text" id="quant" value="1"> 
+                </label>                        
+                <span id="total">= R$ 0.00</span>    
+            </div>
+
+
+        </div>
+        <script>
+
+            var vInput = document.querySelector("#valor1");
+            var vInput = document.querySelector("#valor2");
+            var vInput = document.querySelector("#valor1");
+
+            //quando o usuário digita algo//pressiona uma tecla
+            //listener "ouvinte" 
+
+
+            vInput.addEventListener("keyup", function(){
+                calculaTotal();
+            });
+
+            var vQuant = document.querySelector("#quant");
+            vQuant.addEventListener("keyup", function(){
+                calculaTotal();
+            });
+
+
+        
+            function calculaTotal(){
+                //primeira coisa: declarar as variáveis
+                //querySelector retorn um HTMLElement (tag)
+                let valor = document.querySelector("#valor1");
+                let quant = document.querySelector("#quant");
+                let spanTotal = document.querySelector("#total");
+                
+                //tag * tag. não faz sentido, então tem que colocar "valor(value)" nela
+                // calcula o total e salva numa var "total" (float)
+                let total = valor.value * quant.value;
+                
+                // no caso da <span> usar o textContent 
+                    //pra arrumar os numeros dps da virgula
+                spanTotal.textContent =`= R$ ${total.toFixed(2)}` ;
+
+                //Adicionamento de uma classe CSS a tag span com JS 
+                    //não precisa de ponto (esse fim ta ligado ao CSS)
+                spanTotal.classList = "fim";
+
+            }
+
+        </script>
+    </body>
+</html>

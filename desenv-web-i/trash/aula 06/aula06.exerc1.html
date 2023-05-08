@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+    <style>
+        .formulario {
+            display: grid;
+            grid-template-columns: 210px 1fr;
+            background-color: lightgreen;
+            padding: 20px;
+            text-align: right;
+            column-gap: 10px;
+            row-gap: 10px;
+            width: 500px;
+        }
+        .radio {
+            text-align: left;
+        }
+        .container button {
+            justify-self: left;
+        }
+    </style>
+
+</head>
+<body>
+    <main class="container">
+        <form class="formulario">
+            <label>Data de nascimento:  </label>
+            <input name="data" type="date" placeholder="dd/mm/aaaa">
+        
+            <label>Escolaridade: </label>
+            <select>
+                <option>Ensino Fundamental</option>
+                <option>Ensino Médio</option>
+                <option>Ensino Superior</option>
+            </select>
+            
+            <label>Situação da Escolaridade: </label>
+            <div class="radio">
+                <label>
+                    <input name="escolaridade" type="radio">Completo
+                </label>
+                <label>               
+                    <input name="escolaridade" type="radio">Incompleto
+                </label>
+            </div>
+
+            <label>Nacionalidade: </label>
+            <select>
+                <option>Brasil</option>
+                <option>Uruguai</option>
+                <option>Paraguai</option>
+                <option>Argentina</option>
+            </select>
+
+            <label>UF onde nasceu: </label>
+            <select>
+                <option>Paraná</option>
+                <option>Santa Catarina</option>
+                <option>Rio Grande do Sul</option>
+                <option>São Paulo</option>
+            </select>
+
+            <button>Enviar</button>
+
+        </form>
+    </main>
+    
+</body>
+</html>
